@@ -5,7 +5,7 @@ from testBot import ask, append_interaction_to_chat_log
 app = Flask(__name__)
 #web hook
 #if bots being dumb change the key
-app.config['SECRET_KEY'] = '89djhff9lhdk93'
+app.config['SECRET_KEY'] = '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'
 @app.route('/testBot', methods = ['POST'])
 
 #including information
