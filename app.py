@@ -1,11 +1,13 @@
 from flask import Flask, request, session
 from twilio.twiml.messaging_response import MessagingResponse
 from testBot import ask, append_interaction_to_chat_log
+import os
+import openai
 
 app = Flask(__name__)
 #web hook
 #if bots being dumb change the key
-app.config['SECRET_KEY'] = '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'
+openai.api_key = "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"
 @app.route('/testBot', methods = ['POST'])
 
 #including information
